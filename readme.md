@@ -1,8 +1,8 @@
-# 📦 SmartOrder Logistics Solution
+# 📦 SmartOrder Logistics
 
 ## 📌 Project Overview
 
-**SmartOrder Logistics Solution** is an end-to-end digital logistics system developed as part of an academic challenge in a **Mobile Development university course**.
+**SmartOrder Logistics** is an end-to-end digital logistics system developed as part of an academic challenge in a **Mobile Development university course**.
 
 The main objective of this project is to optimize:
 
