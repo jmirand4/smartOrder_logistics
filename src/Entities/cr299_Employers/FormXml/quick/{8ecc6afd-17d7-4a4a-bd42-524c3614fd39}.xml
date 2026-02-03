@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{8ecc6afd-17d7-4a4a-bd42-524c3614fd39}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab verticallayout="true" id="{f2c15d3f-77bc-43f7-91a2-5845be572ade}" IsUserDefined="1">
+          <labels>
+            <label description="" languagecode="2070" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{157423d2-81d7-4347-a1d0-23fcde136d2f}">
+                  <labels>
+                    <label description="GERAL" languagecode="2070" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{e59e3ac4-7a64-45cf-b3d1-c443e11a70f6}">
+                        <labels>
+                          <label description="Name" languagecode="2070" />
+                        </labels>
+                        <control id="cr299_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr299_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1e686685-4d9e-4ca7-a2c1-a736eeb61ac4}" visible="false">
+                        <labels>
+                          <label description="Proprietário" languagecode="2070" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{65cb195b-bad2-4280-b17b-8762da846bf3}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Email" languagecode="2070" />
+                        </labels>
+                        <control id="cr299_email" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cr299_email" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{f6e8e27e-1ddc-48e5-a65f-69b29d6106d4}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="PinCode" languagecode="2070" />
+                        </labels>
+                        <control id="cr299_pincode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cr299_pincode" disabled="false" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{c48ba910-0ccc-412b-a710-2e8f67a667fc}" locklevel="0" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Role" languagecode="2070" />
+                        </labels>
+                        <control id="cr299_role" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cr299_role" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Informações" languagecode="2070" />
+    </LocalizedNames>
+  </systemform>
+</forms>

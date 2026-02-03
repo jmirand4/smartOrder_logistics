@@ -1,0 +1,1 @@
+cr299_pricewithtax: =Round(cr299_price * 1.23,0)

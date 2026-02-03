@@ -1,0 +1,19 @@
+# Power BI - temp files & cache
+*.pbit
+*.pbip
+*.pbi.cache
+*.pbi.user.config
+*.pbi.datasource.config
+
+# Power Platform CLI - export files & packages
+*.zip
+*.log
+obj/
+bin/
+.auth/
+.pac/
+
+# Windows / OS
+Thumbs.db
+Desktop.ini
+.DS_Store

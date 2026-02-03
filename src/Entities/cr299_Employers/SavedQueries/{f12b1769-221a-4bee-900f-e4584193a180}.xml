@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<savedqueries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <savedquery>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>0</CanBeDeleted>
+    <isquickfindquery>0</isquickfindquery>
+    <isprivate>0</isprivate>
+    <isdefault>1</isdefault>
+    <savedqueryid>{f12b1769-221a-4bee-900f-e4584193a180}</savedqueryid>
+    <layoutxml>
+      <grid name="resultset" jump="cr299_name" select="1" icon="1" preview="1">
+        <row name="result" id="cr299_employersid">
+          <cell name="cr299_name" width="300" />
+          <cell name="createdon" width="125" />
+        </row>
+      </grid>
+    </layoutxml>
+    <querytype>1</querytype>
+    <fetchxml>
+      <fetch version="1.0" mapping="logical">
+        <entity name="cr299_employers">
+          <attribute name="cr299_employersid" />
+          <attribute name="cr299_name" />
+          <attribute name="createdon" />
+          <order attribute="cr299_name" descending="false" />
+        </entity>
+      </fetch>
+    </fetchxml>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <LocalizedNames>
+      <LocalizedName description="Vista Localização Avançada de Employers" languagecode="2070" />
+    </LocalizedNames>
+  </savedquery>
+</savedqueries>

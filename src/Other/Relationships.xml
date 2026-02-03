@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EntityRelationships xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <EntityRelationship Name="business_unit_cr299_employers" />
+  <EntityRelationship Name="business_unit_cr299_order" />
+  <EntityRelationship Name="cr299_order_UserResponsable_cr299_employers" />
+  <EntityRelationship Name="lk_cr299_employers_createdby" />
+  <EntityRelationship Name="lk_cr299_employers_modifiedby" />
+  <EntityRelationship Name="lk_cr299_order_createdby" />
+  <EntityRelationship Name="lk_cr299_order_modifiedby" />
+  <EntityRelationship Name="owner_cr299_employers" />
+  <EntityRelationship Name="owner_cr299_order" />
+  <EntityRelationship Name="team_cr299_employers" />
+  <EntityRelationship Name="team_cr299_order" />
+  <EntityRelationship Name="user_cr299_employers" />
+  <EntityRelationship Name="user_cr299_order" />
+</EntityRelationships>

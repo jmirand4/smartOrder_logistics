@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{39b27147-1835-4c30-bf7b-d604e9426d19}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form>
+      <tabs>
+        <tab name="general" verticallayout="true" id="{45df712b-b239-45b5-a89b-69a31039ab33}" IsUserDefined="0">
+          <labels>
+            <label description="" languagecode="2070" />
+          </labels>
+          <columns>
+            <column width="25%">
+              <sections>
+                <section name="ColorStrip" showlabel="false" showbar="false" columns="1" IsUserDefined="0" id="{9ea83b1e-4275-4d22-adc3-8435870184d8}">
+                  <labels>
+                    <label description="ColorStrip" languagecode="2070" />
+                  </labels>
+                </section>
+              </sections>
+            </column>
+            <column width="75%">
+              <sections>
+                <section name="CardHeader" showlabel="false" showbar="false" columns="111" id="{93fac109-9524-46bb-be50-1c45c7c2fd49}" IsUserDefined="0">
+                  <labels>
+                    <label description="Cabeçalho" languagecode="2070" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{97479e9e-4203-4e3e-8e77-652201608343}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Razão do Estado" languagecode="2070" />
+                        </labels>
+                        <control id="statuscode" classid="{5D68B988-0661-4db2-BC3E-17598AD3BE6C}" datafieldname="statuscode" disabled="false" />
+                      </cell>
+                      <cell id="{6d66597f-627a-48bf-b310-d29ca21d743b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="2070" />
+                        </labels>
+                      </cell>
+                      <cell id="{254d9e14-79cf-4e3c-9003-0ff1a00e9d09}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="2070" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="CardDetails" showlabel="false" showbar="false" columns="1" id="{af97e4fe-a60a-4500-aff2-548b1883985d}" IsUserDefined="0">
+                  <labels>
+                    <label description="Detalhes" languagecode="2070" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{97dbb847-9cc1-442a-929c-95217bb9e65b}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Name" languagecode="2070" />
+                        </labels>
+                        <control id="cr299_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="cr299_name" disabled="false" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+                <section name="CardFooter" showlabel="false" columns="1111" showbar="false" id="{e06dceab-1294-4613-9a47-96c9f80576f7}" IsUserDefined="0">
+                  <labels>
+                    <label description="Rodapé" languagecode="2070" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{f3e8f4cd-ab92-4a15-8cc8-7b6921302179}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Proprietário" languagecode="2070" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" disabled="false" />
+                      </cell>
+                      <cell id="{c6c38c11-960c-4bca-811e-0b861b2feb6a}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Criado Em" languagecode="2070" />
+                        </labels>
+                        <control id="createdon" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="createdon" disabled="false" />
+                      </cell>
+                      <cell id="{4ec37656-cd03-490c-b280-1a7c1494ea0e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="2070" />
+                        </labels>
+                      </cell>
+                      <cell id="{9ba53fd9-9f8e-4db6-9452-fa54250a1fd3}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="" languagecode="2070" />
+                        </labels>
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Informações" languagecode="2070" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="Um formulário de cartão para esta entidade." languagecode="2070" />
+    </Descriptions>
+  </systemform>
+</forms>

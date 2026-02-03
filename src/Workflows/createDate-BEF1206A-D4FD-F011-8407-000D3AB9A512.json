@@ -1,0 +1,79 @@
+{
+  "properties": {
+    "connectionReferences": {
+      "shared_commondataserviceforapps": {
+        "runtimeSource": "embedded",
+        "connection": {
+          "connectionReferenceLogicalName": "new_sharedcommondataserviceforapps_d59b7"
+        },
+        "api": {
+          "name": "shared_commondataserviceforapps"
+        }
+      }
+    },
+    "definition": {
+      "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "$authentication": {
+          "defaultValue": {},
+          "type": "SecureObject"
+        },
+        "$connections": {
+          "defaultValue": {},
+          "type": "Object"
+        }
+      },
+      "triggers": {
+        "Quando_uma_linha_é_adicionada,_modificada_ou_eliminada": {
+          "metadata": {
+            "operationMetadataId": "b618949e-7074-407b-8c31-cfacd187c94d"
+          },
+          "type": "OpenApiConnectionWebhook",
+          "inputs": {
+            "parameters": {
+              "subscriptionRequest/message": 1,
+              "subscriptionRequest/entityname": "cr299_order",
+              "subscriptionRequest/scope": 2
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "SubscribeWebhookTrigger",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        }
+      },
+      "actions": {
+        "Atualizar_uma_linha": {
+          "runAfter": {},
+          "metadata": {
+            "operationMetadataId": "d8a19451-d284-4071-badf-48503bd5c495"
+          },
+          "type": "OpenApiConnection",
+          "inputs": {
+            "parameters": {
+              "entityName": "cr299_orders",
+              "recordId": "@triggerOutputs()?['body/cr299_orderid']",
+              "item/cr299_qrcode": "@triggerOutputs()?['body/cr299_qrcode']",
+              "item/cr299_name": "@triggerOutputs()?['body/cr299_name']",
+              "item/cr299_price": "@triggerOutputs()?['body/cr299_price']",
+              "item/cr299_quantity": "@triggerOutputs()?['body/cr299_quantity']",
+              "item/cr299_type": "@triggerOutputs()?['body/cr299_type']",
+              "item/cr299_day": "@formatDateTime(utcNow(), 'dd')",
+              "item/cr299_month": "@formatDateTime(utcNow(), 'MM')",
+              "item/cr299_year": "@formatDateTime(utcNow(), 'yyyy')"
+            },
+            "host": {
+              "apiId": "/providers/Microsoft.PowerApps/apis/shared_commondataserviceforapps",
+              "operationId": "UpdateOnlyRecord",
+              "connectionName": "shared_commondataserviceforapps"
+            }
+          }
+        }
+      }
+    },
+    "templateName": null
+  },
+  "schemaVersion": "1.0.0.0"
+}
